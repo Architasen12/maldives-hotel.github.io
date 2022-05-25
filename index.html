@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Website</title>
+
+    <!---- FAVICON ---->
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <!-- Link Swiper's CSS -->
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+   />
+   
+   <!-- Owl Carousel -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+   <!-- Owl Carousel Theme css -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+
+    <!---- Custom files Link -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+   
+  <!----------- header ----------->
+  <header class="header-wrapped">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/header.png" class="img-fluid" width="70%" alt="logo"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="fas fa-stream navbar-toggler-icon"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav menu-navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rooms">Rooms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#packages">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item mt-3 mt-lg-0">
+              <a class="main-btn" href="#">Book Now</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Header End -->
+
+  <!-- Banner Section start -->
+  <section id="home" class="banner-wrapper p-0">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide" style="background-image: url(./images/slider1.jpg);">
+          <div class="slider-caption text-center">
+            <div>
+              <h1>Welcome to hotel in Maldives</h1>
+              <p>It is a long established fact that a reader will be distracted by the 
+                  readable content of a page when looking at its layout.</p>
+                  <a class="main-btn rounded-2 px-lg-3" href="#contact">Check Availability</a>
+            </div>
+          </div>
+        
+        </div>
+
+        <div class="swiper-slide" style="background-image: url(./images/slider2.jpg);">
+          <div class="slider-caption text-center">
+            <div>
+              <h1>Welcome to hotel in Maldives</h1>
+              <p>It is a long established fact that a reader will be distracted by the 
+                  readable content of a page when looking at its layout.</p>
+                  <a class="main-btn rounded-2 px-lg-3" href="#contact">Check Availability</a>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+      
+      <div class="swiper-pagination"></div>
+
+    </div>
+    
+    <!-- <div class="container Booking-area">
+      <form class="row">
+        <div class="col-lg mb-3 mb-lg-0">
+          <input type="date" class="form-control" placeholder="Date">
+        </div>
+
+        <div class="col-lg mb-3 mb-lg-0">
+          <input type="date" class="form-control" placeholder="Date">
+        </div>
+
+        <div class="col-lg mb-3 mb-lg-0">
+          <select class="form-select">
+            <option selected>Adults</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+
+        </div>
+
+        <div class="col-lg mb-3 mb-lg-0">
+          <select class="form-select">
+            <option selected>Children</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+           </div>
+         
+           <div class="col-lg mb-3 mb-lg-0">
+            <a class="main-btn rounded-2 px-lg-3" href="#contact">Check Availability</a>
+           </div>
+
+      </form>
+
+    </div> -->
+
+  </section>
+  <!-- SLIDER END -->
+ 
+  <!------ ABOUT SECTION ------>
+  <section id="about" class="about-wrapper">
+    <div class="container">
+      <div class="row flex-lg-row flex-column-reverse">
+        <div class="col-lg-6 text-center text-lg-start">
+       <h3>Welcome to <span>Hotel <br class="d-none d-lg-block"> Maldives Heaven </span> of your weekend</h3>
+       <p>It is a long established fact that a reader will be distracted 
+         by the readable content of a page when looking at its layout. 
+         The point of using Lorem Ipsum is that it has a more-or-less 
+         normal distribution of letters, as opposed to using 'Content here.</p>
+         <p>Many desktop publishing packages and web page editors now use 
+           Lorem Ipsum as their default model text, and a search for 'lorem ipsum' 
+           will uncover many web sites still in their infancy. Various versions have evolved over the years, 
+           sometimes by accident, sometimes on purpose</p>
+         
+
+         </div>
+         <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-4 text-center">
+           <img src="images/about-img" class="img-fluid" alt="about">
+         </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- About Sec end -->
+ 
+  <!-------- Room Section ------->
+  <section id="rooms" class="rooms-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 text-center mb-5">
+          <h6>What we can offer you</h6>
+          <h3>Our Catergory of Rooms</h3>
+        </div>
+      </div>
+
+      <div class="row m-0">
+
+      <div class="col-md-4 mb-4 mb-lg-0">
+        <div class="room-items">
+          <img src="./images/room1.jpg" class="img-fluid">
+        <div class="room-item-wrap">
+        <div class="room-content">
+          <h5 class="text-white mb-lg-5 text-decoration-underline">Super Deluxe Suit</h5>
+          <p class="text-white">There are many variations of passages of Lorem Ipsum available, but the majority </p>
+          <p class="text-white fw-bold mt-lg-4">$320 / Per Night</p>
+          <a class="main-btn border-white text-white mt-lg-5" href="#">Book Now</a>
+        </div>
+        </div>
+        </div>
+       </div>
+
+       <div class="col-md-4 mb-4 mb-lg-0">
+        <div class="room-items">
+          <img src="./images/room2.jpg" class="img-fluid">
+        <div class="room-item-wrap">
+        <div class="room-content">
+          <h5 class="text-white mb-lg-5 text-decoration-underline">Luxury Deluxe Room</h5>
+          <p class="text-white">There are many variations of passages of Lorem Ipsum available, but the majority </p>
+          <p class="text-white fw-bold mt-lg-4">$240 / Per Night</p>
+          <a class="main-btn border-white text-white mt-lg-5" href="#">Book Now</a>
+        </div>
+        </div>
+        </div>
+       </div>
+
+       <div class="col-md-4 mb-4 mb-lg-0">
+        <div class="room-items">
+          <img src="./images/room3.jpg" class="img-fluid">
+        <div class="room-item-wrap">
+        <div class="room-content">
+          <h5 class="text-white mb-lg-5 text-decoration-underline">Premium Suit</h5>
+          <p class="text-white">There are many variations of passages of Lorem Ipsum available, but the majority </p>
+          <p class="text-white fw-bold mt-lg-4">$190 / Per Night</p>
+          <a class="main-btn border-white text-white mt-lg-5" href="#">Book Now</a>
+        </div>
+        </div>
+        </div>
+       </div>
+
+    </div>
+
+      </div>
+  </section>
+<!-- Room end -->
+   
+<!---------- SERVICES SECTION -------->
+<section id="services" class="services-wrapper">
+<div class="container">
+<div class="row">
+  <div class="col-sm-12 text-center mb-5">
+    <h6>We ARE HERE TO SERVE YOU</h6>
+    <h3>Our Professional Services</h3>
+  </div>
+</div>
+
+<div class="row align-items-center service-item-wrap">
+  <div class="col-lg-6 p-lg-0">
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="estaurant" role="tabpanel">
+      <img src="images/restaurant-img.jpg">
+      </div>
+      <div class="tab-pane fade" id="spa" role="tabpanel">
+        <img src="images/spa.jpg">
+
+      </div>
+      <div class="tab-pane fade" id="swimming" role="tabpanel">
+        <img src="images/swimming.jpg">
+
+      </div>
+      <div class="tab-pane fade" id="conference" role="tabpanel">
+        <img src="images/conference.jpg">
+
+      </div>
+    </div>
+  </div>
+      <div class="col-lg-6 position-relative">
+        <div class="service-menu-area">
+          <ul class="nav">
+            <li>
+              <a data-bs-toggle="tab" href="#restaurant" class="active">
+              <span class="service-icon">
+                <img src="images/tray.png" width="40%" alt="">
+              </span>
+              <h5>Restaurant</h5>
+              <p><span>Restaurant</span>long established fact that a reader will be distracted
+                Lorem Ipsum as their default model text default model</p>
+            </a>
+          </li>
+
+          <li><a data-bs-toggle="tab" href="#spa" class="">
+            <span class="service-icon">
+              <img src="images/spa.png" width="40%" alt="">
+            </span>
+            <h5>Spa Health &amp; Beauty</h5>
+            <p><span>Spa & Beauty</span>long established fact that a reader will be distracted
+              Lorem Ipsum as their default model text default model </p>
+          </a>
+        </li>
+
+        <li><a data-bs-toggle="tab" href="#swimming" class="">
+          <span class="service-icon">
+            <img src="images/swimming.png" width="40%" alt="">
+          </span>
+          <h5>Swimming Pool</h5>
+          <p><span>Swimming</span> Pool long established fact that a reader will be distracted
+            Lorem Ipsum as their default model text default model text </p>
+        </a>
+      </li>
+
+      <li><a data-bs-toggle="tab" href="#conference" class="">
+        <span class="service-icon">
+          <img src="images/speaker.png" width="40%" alt="">
+        </span>
+        <h5>conference Hall</h5>
+        <p><span>Conference </span> Pool long established fact that a reader will be distracted
+          Lorem Ipsum as their default model text default model text </p>
+      </a>
+    </li>
+
+          </ul>
+        </div>
+      </div>
+
+</div>
+
+</div>
+
+</section>
+<!-- Service end -->
+
+<!-------- Team section start --------->
+<section id="team" class="team-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center mb-5">
+        <h6>What can I do for you</h6>
+        <h3>Our Experienced Team</h3>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card p-0 rounded-3">
+          <img src="images/manager.jpg" class="img-fluid rounded-3">
+          <div class="team-info">
+            <h5>Jennie Thomas</h5>
+            <p>Manager</p>
+            <ul class="social-network">
+              <li><a href="#"> <i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"> <i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"> <i class="fab fa-google-plus-g"></i></a></li>
+              <li><a href="#"> <i class="fab fa-vimeo-v"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card p-0 rounded-3">
+          <img src="images/chef.jpg" class="img-fluid rounded-3">
+          <div class="team-info">
+            <h5>Arnold Jackob</h5>
+            <p>Our  Expert Chef</p>
+            <ul class="social-network">
+              <li><a href="#"> <i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"> <i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"> <i class="fab fa-google-plus-g"></i></a></li>
+              <li><a href="#"> <i class="fab fa-vimeo-v"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card p-0 rounded-3">
+          <img src="images/receptionist.jpg" class="img-fluid rounded-3">
+          <div class="team-info">
+            <h5>Merrie Dcruise</h5>
+            <p>Receptionist</p>
+            <ul class="social-network">
+              <li><a href="#"> <i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"> <i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"> <i class="fab fa-google-plus-g"></i></a></li>
+              <li><a href="#"> <i class="fab fa-vimeo-v"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card p-0 rounded-3">
+          <img src="images/waiter.jpg" class="img-fluid rounded-3">
+          <div class="team-info">
+            <h5>Nick Jonas</h5>
+            <p>F & B Staff</p>
+            <ul class="social-network">
+              <li><a href="#"> <i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"> <i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"> <i class="fab fa-google-plus-g"></i></a></li>
+              <li><a href="#"> <i class="fab fa-vimeo-v"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+</section>
+<!-- Team end -->
+
+<!------ Gallery Section  ------->
+<section id="gallery" class="gallery-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center mb-5">
+      <h6>Our Hotel Pictures</h6>
+      <h3>Our Gallery</h3>
+      </div>
+    </div>
+
+    <div class="row g-0">
+    <div class="col-lg-3 col-md-6 gallery-item">
+      <img src="images/gallery3.jpg" class="img-fluid w-100">
+      <div class="gallery-item-content">Deluxe Room</div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 gallery-item">
+      <img src="images/gallery1.jpg" class="img-fluid w-100">
+      <div class="gallery-item-content">Swimming Pool</div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 gallery-item">
+      <img src="images/gallery2.jpg" class="img-fluid w-100">
+      <div class="gallery-item-content">Luxury Bathroom</div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 gallery-item">
+      <img src="images/gallery4.jpg" class="img-fluid w-100">
+      <div class="gallery-item-content">Balcony</div>
+    </div>
+
+    <div class="col-md-6 gallery-item">
+      <img src="images/gal5.jpg" class="img-fluid w-100">
+      <div class="gallery-item-content">Scenic View Of Maldive</div>
+    </div>
+
+    <div class="col-md-6 gallery-item">
+      <img src="images/gal6.jpg" class="img-fluid w-100">
+      <div class="gallery-item-content">Pool Villas</div>
+    </div>
+    
+    </div>
+
+  </div>
+</section>
+<!-- gallery end -->
+
+<!------ PACKAGES SECTION ----------->
+<section id="packages" class="packages-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center mb-5">
+        <h6>Our Best Price for you</h6>
+        <h3>Our Packages</h3>
+      </div>
+       </div>
+
+       <div class="row mt-5">
+        <div class="owl-carousel owl-theme">
+         <div class="item mb-4">
+          <div class="card border-0 shadow">
+            <img src="images/pkg1.jpg" alt="image" class="card-img-top">
+            <div class="card-body">
+              <h3>Premium Packages</h3>
+              <h4>Starting @ $550</h4>
+              <h5>(Inclusion:Breakfast &amp; sightseeing)</h5>
+               <a href="#contact" class="main-btn">Contact Us</a>
+            </div>
+            </div>
+
+         </div>
+
+         <div class="item mb-4">
+          <div class="card border-0">
+            <img src="images/pkg2.jpg" alt="image" class="card-img-top">
+            <div class="card-body">
+              <h3>Deluxe Packages</h3>
+              <h4>Starting @ $640</h4>
+              <h5>(Inclusion:Breakfast, dinner &amp; sightseeing)</h5>
+               <a href="#contact" class="main-btn">Contact Us</a>
+            </div>
+            </div>
+
+         </div>
+
+         <div class="item mb-4">
+          <div class="card border-0">
+            <img src="images/pkg3.jpg" alt="image" class="card-img-top">
+            <div class="card-body">
+              <h3>Super Deluxe Packages</h3>
+              <h4>Starting @ $760</h4>
+              <h5>(Inclusion:All meals &amp; sightseeing)</h5>
+               <a href="#contact" class="main-btn">Contact Us</a>
+            </div>
+            </div>
+
+         </div>
+
+         <div class="item mb-4">
+          <div class="card border-0">
+            <img src="images/pkg4.jpg" alt="image" class="card-img-top">
+            <div class="card-body">
+              <h3>Gold Packages</h3>
+              <h4>Starting @ $900</h4>
+              <h5>(Inclusion:All meals, sightseeing & Activity)</h5>
+               <a href="#contact" class="main-btn">Contact Us</a>
+            </div>
+            </div>
+
+         </div>
+
+         <div class="item mb-4">
+          <div class="card border-0">
+            <img src="images/pkg5.jpg" alt="image" class="card-img-top">
+            <div class="card-body">
+              <h3>Premium Gold Packages</h3>
+              <h4>Starting @ $980</h4>
+              <h5>(Inclusion:All meal, sightseeing &amp; Special event)</h5>
+               <a href="#contact" class="main-btn">Contact Us</a>
+            </div>
+            </div>
+
+         </div>
+
+         <div class="item mb-4">
+          <div class="card border-0">
+            <img src="images/pkg6.jpg" alt="image" class="card-img-top">
+            <div class="card-body">
+              <h3>Platinum Packages</h3>
+              <h4>Starting @ $1060</h4>
+              <h5>(Inclusion:All meal, sightseeing, activity &amp;events)</h5>
+               <a href="#contact" class="main-btn">Contact Us</a>
+            </div>
+            </div>
+
+         </div>
+          
+      </div>
+       </div>
+      
+
+  </div>
+</section>
+<!-- price end -->
+
+<!-------- BLOG SECTION START --------->
+<section id="blog" class="blog-wrapper pb-0 ">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center mb-5">
+        <h6>Say Hello To Our Visitors</h6>
+        <h3>Our Blog</h3>
+      </div>
+       </div>
+
+       <div class="row">
+         <div class="col-md-6 mb-4">
+            <div class="card p-0 border-0 rounded-0">
+              <img src="images/blog-3.jpg" alt="">
+              <div class="blog-content bg-white p-4">
+              <h5 class="text-decoration-underline mb-4">Recreation Zone</h5>
+              <h6>By Admin - April 26, 2022</h6>
+              <p class="mt-2">Lorem Ipsum is that it has
+                normal distribution of letters</p>
+                
+              </div>
+            </div>
+         </div>
+
+         <div class="col-md-6 mb-4">
+          <div class="card p-0 border-0 rounded-0">
+            <img src="images/blog4.jpg" alt="">
+            <div class="blog-content bg-white p-4">
+            <h5 class="text-decoration-underline mb-4">Recreation Zone</h5>
+            <h6>By Admin - April 26, 2022</h6>
+            <p class="mt-2">Lorem Ipsum is that it has
+              normal distribution of letters</p>
+              
+            </div>
+          </div>
+       </div>
+
+
+       </div>
+
+
+  </div>
+</section>
+<!-- Blog end -->
+
+<!------- FOOTER SECTION --------->
+<section id="contact" class="footer-wrapper mt-3 mt-md-0 pb-0">
+  <div class="container pb-3">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <h5>Hotel Location</h5>
+        <p class="ps-0">long established fact that a reader will be distracted 
+          by the readable pool long established fact that a reader will be distracted
+          Lorem Ipsum as their default</p>
+          <div class="contact-info">
+            <ul class="list-unstyled">
+              <li><a href="#"><i class="fa fa-home me-3"></i> South Alley Road No 04 Maldives</a></li>
+              <li><a href="#"><i class="fa fa-phone me-3"></i> +12 8765435789</a></li>
+              <li><a href="#"><i class="fa fa-envelope me-3"></i> info@hotelmaldives.com</a></li>
+            </ul>
+          </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6">
+        <h5>Contact Us</h5>
+        <div class="form-group mb-4">
+          <input type="text" class="form-control bg-transparent" placeholder="Full Name">
+          <input type="email" class="form-control bg-transparent" placeholder="Email address">
+          <input type="tel" class="form-control bg-transparent" placeholder="Phone number">
+         <span><input type="text" class="form-control bg-transparent" placeholder="Message"></span> 
+          <button type="submit" class="main-btn rounded-2 mt-3 text-white">submit</button>
+        </div>
+        <ul class="social-network d-flex align-items-center p-0">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+          <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+          
+        </ul>
+      </div>
+     
+      
+    </div>
+  </div>
+ <div class="container-fluid copyright-section">
+   <p>Copyright <a href="#">©Archita Sen</a> All Rights Reserved</p>
+ </div>
+
+</section>
+
+
+
+
+
+
+
+<!-- Bootstrap JS CDN links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<!-- Swipe JS -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- Custom Js Link -->
+<script src="js/main.js"></script>
+
+<!-- Owl Carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+<!-- Init Owl Carousel -->
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        
+        600:{
+            items:3
+        },
+        
+        1000:{
+            items:3
+        }
+    }
+})
+
+</script>
+
+
+
+  </body>
+</html>
